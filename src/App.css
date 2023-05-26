@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.dropdown1 , .dropdown2 {
+  display: none;
+}
+
+.drp1:hover + .dropdown1 ,.drp2:hover + .dropdown2,.dropdown1:hover,.dropdown2:hover {
+  display: block;
+  position: absolute;
+}
+
+.logo{
+   width:8rem;
+   height:8rem;
+   padding:0.5rem;
+}
+.nav{
+  background-color:#0C134F;
+}
+.nav-item >Link,ul>li{
+  font-size: x-large;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+.list-group{
+  background-color: #1D267D;
+}
+.nav-link:visited{
+  color:white
+}
+.list-group-item>a{
+  text-decoration:none;
+}
+.nav-link:hover,.list-group-item>a:hover {
+  color: rgb(230, 0, 255);
+}
+.marquee-w {
+  /* margin-top:1rem; */
+  background-color:#1D267D;
+  /* position: relative; */
+  display: block;
+  width: auto;
+  height: 3rem;
+  /* transform: translate(-50%, -50%); */
+  overflow: hidden;
+}
+.marquee {
+  /* position: absolute; */
+  display: block;
+  margin: auto auto;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 100%;
+  height: 100%;
+}
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  font-family: 'poppinsbold';
+  text-align: center;
+  /* -webkit-text-stroke: 1px #43e486; */
+  white-space: nowrap;
+  min-width: 100%;
+  height: 100%;
+  font-size: x-large;
+  color:white;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee2 span {
+  animation-delay: 5s;
+}
+@keyframes marquee {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-100%, 0);
+  }
+}
+.social{
+  margin-top: 1rem;
+  width:5.5rem;
+  background-color: rgb(171, 194, 197) ;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  height:auto;
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
+}
+.social_logo{
+   margin-left: 1rem;
+   padding: 0.5rem;
+   padding-bottom: 0.5rem;
+   width:4rem;
+   height:4rem;
+}
+.course_img{
+   width:15rem;
+}
